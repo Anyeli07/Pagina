@@ -6,8 +6,8 @@
     <title>Reservaciones</title>
     <link rel="stylesheet" href="diseño.css">
 
-    <p style="font-size: 100px;">Lumina <strong>Studio</strong></p><br>
-    <p style="font-size: 50px;">Complera tus datos para reservar una fecha</p><br>
+    <p style="font-size: 100px;">Lumina <strong>Studio</strong></p><br><br>
+    <p style="font-size: 50px;">Completa tus datos para reservar una fecha</p><br><br>
 </head>
     
 <body id="reserv">
@@ -17,16 +17,17 @@
         <input type="text" id="nombre" name="nombre" required><br><br>
 
         <label for="nombre" class="nombre">Correo electrónico</label>
-        <input type="email" id="nombre" name="nombre" required><br><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
         
         <label for="nombre" class="nombre">Número de celular</label>
         <input type="tel" id="nombre" name="nombre" required><br><br>
 
-        <label for="nombre" class="nombre">Hora</label>
-        <input type="time" id="nombre" name="nombre" required><br><br>
+       <label for="hora" class="hora-label">Hora</label>
+        <input type="time" id="hora" name="hora" min="09:00" max="17:00" required>
+
 
         <label for="fecha">Fecha deseada</label>
-        <input type="date" id="fecha" name="fecha" required><br><br>
+        <input type="date" id="fecha" name="fecha" min="09:00" max="17:00" required><br><br>
 
         <label for="Tipo de evento">Tipo de sesión</label>
     <select name="Tippo de evento" id="Tipo de evento">
@@ -36,7 +37,7 @@
      <option value="Cumpleaños">Otro</option>
     </select><br>
     <label for="fecha">Si marcaste "otro" escribe la opción</label><br>
-    <input type="text" id="nombre" name="nombre" required>
+    <input type="text" id="nombre" name="nombre">
     <br>
     
     <br>
